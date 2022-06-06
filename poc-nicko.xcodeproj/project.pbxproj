@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C4823F527AB191B0000C1C4 /* PokedexFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4823F427AB191B0000C1C4 /* PokedexFactory.swift */; };
+		3C4823FB27AB19DE0000C1C4 /* PokedexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4823FA27AB19DE0000C1C4 /* PokedexView.swift */; };
+		3C4823FD27AB1D0B0000C1C4 /* PokedexBloc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4823FC27AB1D0B0000C1C4 /* PokedexBloc.swift */; };
+		3C4823FF27AB1D360000C1C4 /* PokedexViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4823FE27AB1D360000C1C4 /* PokedexViewState.swift */; };
+		3C48240227AB1DC80000C1C4 /* PokedexEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48240127AB1DC80000C1C4 /* PokedexEvents.swift */; };
+		3C48240427AB1F8F0000C1C4 /* PokedexRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48240327AB1F8F0000C1C4 /* PokedexRouter.swift */; };
+		3C4D344127A4A4EC00F0D012 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D344027A4A4EC00F0D012 /* App.swift */; };
+		3C4D344327A4A4EC00F0D012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D344227A4A4EC00F0D012 /* ContentView.swift */; };
+		3C4D344527A4A4EF00F0D012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C4D344427A4A4EF00F0D012 /* Assets.xcassets */; };
+		3C4D344827A4A4EF00F0D012 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C4D344727A4A4EF00F0D012 /* Preview Assets.xcassets */; };
+		3C4D345227A4A4F000F0D012 /* poc_nickoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D345127A4A4F000F0D012 /* poc_nickoTests.swift */; };
+		3C4D345C27A4A4F000F0D012 /* poc_nickoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D345B27A4A4F000F0D012 /* poc_nickoUITests.swift */; };
+		3C4D345E27A4A4F000F0D012 /* poc_nickoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D345D27A4A4F000F0D012 /* poc_nickoUITestsLaunchTests.swift */; };
+		3C4D347627A85FC500F0D012 /* ExperimentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D347527A85FC500F0D012 /* ExperimentView.swift */; };
+		3C4D347827A8601100F0D012 /* ExperimentViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D347727A8601100F0D012 /* ExperimentViewState.swift */; };
+		3C4D347A27A8607800F0D012 /* ExperimentEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D347927A8607800F0D012 /* ExperimentEvents.swift */; };
+		3C4D347C27A860A200F0D012 /* Experiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D347B27A860A200F0D012 /* Experiment.swift */; };
+		3C4D347E27A861B100F0D012 /* ExperimentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D347D27A861B100F0D012 /* ExperimentFactory.swift */; };
+		3C4D348027A8624E00F0D012 /* ExperimentBloc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D347F27A8624E00F0D012 /* ExperimentBloc.swift */; };
+		3C4D348227A8785900F0D012 /* ExperimentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D348127A8785900F0D012 /* ExperimentRouter.swift */; };
+		3C4D348427A8830D00F0D012 /* ExperimentView+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D348327A8830D00F0D012 /* ExperimentView+Components.swift */; };
+		3C4D348627A8833C00F0D012 /* ExperimentView+OnAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D348527A8833C00F0D012 /* ExperimentView+OnAppear.swift */; };
+		3C4D348D27A8B62600F0D012 /* MainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D348C27A8B62500F0D012 /* MainFactory.swift */; };
+		3CD2A12927AE076B00143DF4 /* PokeAPIRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2A12827AE076B00143DF4 /* PokeAPIRequestable.swift */; };
+		3CD2A12B27AE083600143DF4 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2A12A27AE083600143DF4 /* HTTPMethod.swift */; };
+		3CD2A12D27AE098600143DF4 /* APIRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2A12C27AE098600143DF4 /* APIRequestable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C4D344E27A4A4F000F0D012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C4D343527A4A4EC00F0D012 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C4D343C27A4A4EC00F0D012;
+			remoteInfo = "poc-nicko";
+		};
+		3C4D345827A4A4F000F0D012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C4D343527A4A4EC00F0D012 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C4D343C27A4A4EC00F0D012;
+			remoteInfo = "poc-nicko";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C4823F427AB191B0000C1C4 /* PokedexFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexFactory.swift; sourceTree = "<group>"; };
+		3C4823FA27AB19DE0000C1C4 /* PokedexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexView.swift; sourceTree = "<group>"; };
+		3C4823FC27AB1D0B0000C1C4 /* PokedexBloc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexBloc.swift; sourceTree = "<group>"; };
+		3C4823FE27AB1D360000C1C4 /* PokedexViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewState.swift; sourceTree = "<group>"; };
+		3C48240127AB1DC80000C1C4 /* PokedexEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexEvents.swift; sourceTree = "<group>"; };
+		3C48240327AB1F8F0000C1C4 /* PokedexRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexRouter.swift; sourceTree = "<group>"; };
+		3C4D343D27A4A4EC00F0D012 /* poc-nicko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "poc-nicko.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4D344027A4A4EC00F0D012 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		3C4D344227A4A4EC00F0D012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3C4D344427A4A4EF00F0D012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C4D344727A4A4EF00F0D012 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C4D344D27A4A4F000F0D012 /* poc-nickoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "poc-nickoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4D345127A4A4F000F0D012 /* poc_nickoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poc_nickoTests.swift; sourceTree = "<group>"; };
+		3C4D345727A4A4F000F0D012 /* poc-nickoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "poc-nickoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4D345B27A4A4F000F0D012 /* poc_nickoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poc_nickoUITests.swift; sourceTree = "<group>"; };
+		3C4D345D27A4A4F000F0D012 /* poc_nickoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poc_nickoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C4D347527A85FC500F0D012 /* ExperimentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentView.swift; sourceTree = "<group>"; };
+		3C4D347727A8601100F0D012 /* ExperimentViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentViewState.swift; sourceTree = "<group>"; };
+		3C4D347927A8607800F0D012 /* ExperimentEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentEvents.swift; sourceTree = "<group>"; };
+		3C4D347B27A860A200F0D012 /* Experiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experiment.swift; sourceTree = "<group>"; };
+		3C4D347D27A861B100F0D012 /* ExperimentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentFactory.swift; sourceTree = "<group>"; };
+		3C4D347F27A8624E00F0D012 /* ExperimentBloc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentBloc.swift; sourceTree = "<group>"; };
+		3C4D348127A8785900F0D012 /* ExperimentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentRouter.swift; sourceTree = "<group>"; };
+		3C4D348327A8830D00F0D012 /* ExperimentView+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExperimentView+Components.swift"; sourceTree = "<group>"; };
+		3C4D348527A8833C00F0D012 /* ExperimentView+OnAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExperimentView+OnAppear.swift"; sourceTree = "<group>"; };
+		3C4D348C27A8B62500F0D012 /* MainFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
+		3CD2A12827AE076B00143DF4 /* PokeAPIRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAPIRequestable.swift; sourceTree = "<group>"; };
+		3CD2A12A27AE083600143DF4 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		3CD2A12C27AE098600143DF4 /* APIRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C4D343A27A4A4EC00F0D012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4D344A27A4A4F000F0D012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4D345427A4A4F000F0D012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C4823F127AB18EE0000C1C4 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				3C4823F327AB19060000C1C4 /* Pokedex */,
+				3C4D348B27A8A50100F0D012 /* Main */,
+				3C4D347427A85F4B00F0D012 /* Experiment */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		3C4823F227AB18FE0000C1C4 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2A12127AE051C00143DF4 /* Entities */,
+				3CD2A12027AE02DB00143DF4 /* Data Store */,
+				3CD2A11F27AE02D300143DF4 /* Repository */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		3C4823F327AB19060000C1C4 /* Pokedex */ = {
+			isa = PBXGroup;
+			children = (
+				3C4823F427AB191B0000C1C4 /* PokedexFactory.swift */,
+				3C4823F627AB19A40000C1C4 /* Bloc */,
+				3C4823F827AB19B00000C1C4 /* Model */,
+				3C4823F727AB19AA0000C1C4 /* Router */,
+				3C4823F927AB19B70000C1C4 /* View */,
+			);
+			path = Pokedex;
+			sourceTree = "<group>";
+		};
+		3C4823F627AB19A40000C1C4 /* Bloc */ = {
+			isa = PBXGroup;
+			children = (
+				3C4823FC27AB1D0B0000C1C4 /* PokedexBloc.swift */,
+				3C48240127AB1DC80000C1C4 /* PokedexEvents.swift */,
+				3C4823FE27AB1D360000C1C4 /* PokedexViewState.swift */,
+			);
+			path = Bloc;
+			sourceTree = "<group>";
+		};
+		3C4823F727AB19AA0000C1C4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3C48240327AB1F8F0000C1C4 /* PokedexRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3C4823F827AB19B00000C1C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C4823F927AB19B70000C1C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C4823FA27AB19DE0000C1C4 /* PokedexView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C4D343427A4A4EC00F0D012 = {
+			isa = PBXGroup;
+			children = (
+				3C4D343F27A4A4EC00F0D012 /* poc-nicko */,
+				3C4D345027A4A4F000F0D012 /* poc-nickoTests */,
+				3C4D345A27A4A4F000F0D012 /* poc-nickoUITests */,
+				3C4D343E27A4A4EC00F0D012 /* Products */,
+				3C4D346B27A5AD9800F0D012 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3C4D343E27A4A4EC00F0D012 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D343D27A4A4EC00F0D012 /* poc-nicko.app */,
+				3C4D344D27A4A4F000F0D012 /* poc-nickoTests.xctest */,
+				3C4D345727A4A4F000F0D012 /* poc-nickoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C4D343F27A4A4EC00F0D012 /* poc-nicko */ = {
+			isa = PBXGroup;
+			children = (
+				3C4823F227AB18FE0000C1C4 /* Worker */,
+				3C4823F127AB18EE0000C1C4 /* Feature */,
+				3C4D344027A4A4EC00F0D012 /* App.swift */,
+				3C4D344227A4A4EC00F0D012 /* ContentView.swift */,
+				3C4D344427A4A4EF00F0D012 /* Assets.xcassets */,
+				3C4D344627A4A4EF00F0D012 /* Preview Content */,
+			);
+			path = "poc-nicko";
+			sourceTree = "<group>";
+		};
+		3C4D344627A4A4EF00F0D012 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D344727A4A4EF00F0D012 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C4D345027A4A4F000F0D012 /* poc-nickoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D345127A4A4F000F0D012 /* poc_nickoTests.swift */,
+			);
+			path = "poc-nickoTests";
+			sourceTree = "<group>";
+		};
+		3C4D345A27A4A4F000F0D012 /* poc-nickoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D345B27A4A4F000F0D012 /* poc_nickoUITests.swift */,
+				3C4D345D27A4A4F000F0D012 /* poc_nickoUITestsLaunchTests.swift */,
+			);
+			path = "poc-nickoUITests";
+			sourceTree = "<group>";
+		};
+		3C4D346B27A5AD9800F0D012 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C4D347427A85F4B00F0D012 /* Experiment */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D347D27A861B100F0D012 /* ExperimentFactory.swift */,
+				3C4D348727A8845800F0D012 /* Bloc */,
+				3C4D348A27A8846D00F0D012 /* Model */,
+				3C4D348927A8846600F0D012 /* Router */,
+				3C4D348827A8845F00F0D012 /* View */,
+			);
+			path = Experiment;
+			sourceTree = "<group>";
+		};
+		3C4D348727A8845800F0D012 /* Bloc */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D347F27A8624E00F0D012 /* ExperimentBloc.swift */,
+				3C4D347927A8607800F0D012 /* ExperimentEvents.swift */,
+				3C4D347727A8601100F0D012 /* ExperimentViewState.swift */,
+			);
+			path = Bloc;
+			sourceTree = "<group>";
+		};
+		3C4D348827A8845F00F0D012 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D348327A8830D00F0D012 /* ExperimentView+Components.swift */,
+				3C4D348527A8833C00F0D012 /* ExperimentView+OnAppear.swift */,
+				3C4D347527A85FC500F0D012 /* ExperimentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C4D348927A8846600F0D012 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D348127A8785900F0D012 /* ExperimentRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3C4D348A27A8846D00F0D012 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D347B27A860A200F0D012 /* Experiment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C4D348B27A8A50100F0D012 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D348C27A8B62500F0D012 /* MainFactory.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3CD2A11F27AE02D300143DF4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3CD2A12027AE02DB00143DF4 /* Data Store */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2A12427AE071100143DF4 /* New Group */,
+			);
+			path = "Data Store";
+			sourceTree = "<group>";
+		};
+		3CD2A12127AE051C00143DF4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2A12227AE06FA00143DF4 /* API */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3CD2A12227AE06FA00143DF4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2A12327AE070B00143DF4 /* Request */,
+				3CD2A12527AE071600143DF4 /* Response */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3CD2A12327AE070B00143DF4 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2A12627AE073300143DF4 /* Common */,
+				3CD2A12727AE073A00143DF4 /* PokemonList */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		3CD2A12427AE071100143DF4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3CD2A12527AE071600143DF4 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		3CD2A12627AE073300143DF4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2A12827AE076B00143DF4 /* PokeAPIRequestable.swift */,
+				3CD2A12A27AE083600143DF4 /* HTTPMethod.swift */,
+				3CD2A12C27AE098600143DF4 /* APIRequestable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3CD2A12727AE073A00143DF4 /* PokemonList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PokemonList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C4D343C27A4A4EC00F0D012 /* poc-nicko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4D346127A4A4F000F0D012 /* Build configuration list for PBXNativeTarget "poc-nicko" */;
+			buildPhases = (
+				3C4D343927A4A4EC00F0D012 /* Sources */,
+				3C4D343A27A4A4EC00F0D012 /* Frameworks */,
+				3C4D343B27A4A4EC00F0D012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "poc-nicko";
+			packageProductDependencies = (
+			);
+			productName = "poc-nicko";
+			productReference = 3C4D343D27A4A4EC00F0D012 /* poc-nicko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C4D344C27A4A4F000F0D012 /* poc-nickoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4D346427A4A4F000F0D012 /* Build configuration list for PBXNativeTarget "poc-nickoTests" */;
+			buildPhases = (
+				3C4D344927A4A4F000F0D012 /* Sources */,
+				3C4D344A27A4A4F000F0D012 /* Frameworks */,
+				3C4D344B27A4A4F000F0D012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4D344F27A4A4F000F0D012 /* PBXTargetDependency */,
+			);
+			name = "poc-nickoTests";
+			productName = "poc-nickoTests";
+			productReference = 3C4D344D27A4A4F000F0D012 /* poc-nickoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C4D345627A4A4F000F0D012 /* poc-nickoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4D346727A4A4F000F0D012 /* Build configuration list for PBXNativeTarget "poc-nickoUITests" */;
+			buildPhases = (
+				3C4D345327A4A4F000F0D012 /* Sources */,
+				3C4D345427A4A4F000F0D012 /* Frameworks */,
+				3C4D345527A4A4F000F0D012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4D345927A4A4F000F0D012 /* PBXTargetDependency */,
+			);
+			name = "poc-nickoUITests";
+			productName = "poc-nickoUITests";
+			productReference = 3C4D345727A4A4F000F0D012 /* poc-nickoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C4D343527A4A4EC00F0D012 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3C4D343C27A4A4EC00F0D012 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					3C4D344C27A4A4F000F0D012 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3C4D343C27A4A4EC00F0D012;
+					};
+					3C4D345627A4A4F000F0D012 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3C4D343C27A4A4EC00F0D012;
+					};
+				};
+			};
+			buildConfigurationList = 3C4D343827A4A4EC00F0D012 /* Build configuration list for PBXProject "poc-nicko" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C4D343427A4A4EC00F0D012;
+			productRefGroup = 3C4D343E27A4A4EC00F0D012 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C4D343C27A4A4EC00F0D012 /* poc-nicko */,
+				3C4D344C27A4A4F000F0D012 /* poc-nickoTests */,
+				3C4D345627A4A4F000F0D012 /* poc-nickoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C4D343B27A4A4EC00F0D012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4D344827A4A4EF00F0D012 /* Preview Assets.xcassets in Resources */,
+				3C4D344527A4A4EF00F0D012 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4D344B27A4A4F000F0D012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4D345527A4A4F000F0D012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C4D343927A4A4EC00F0D012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4D348027A8624E00F0D012 /* ExperimentBloc.swift in Sources */,
+				3C4823FB27AB19DE0000C1C4 /* PokedexView.swift in Sources */,
+				3C4D348D27A8B62600F0D012 /* MainFactory.swift in Sources */,
+				3C4D348427A8830D00F0D012 /* ExperimentView+Components.swift in Sources */,
+				3C4D347C27A860A200F0D012 /* Experiment.swift in Sources */,
+				3C48240427AB1F8F0000C1C4 /* PokedexRouter.swift in Sources */,
+				3C4D347627A85FC500F0D012 /* ExperimentView.swift in Sources */,
+				3C4D347827A8601100F0D012 /* ExperimentViewState.swift in Sources */,
+				3CD2A12927AE076B00143DF4 /* PokeAPIRequestable.swift in Sources */,
+				3C48240227AB1DC80000C1C4 /* PokedexEvents.swift in Sources */,
+				3C4D347A27A8607800F0D012 /* ExperimentEvents.swift in Sources */,
+				3C4823F527AB191B0000C1C4 /* PokedexFactory.swift in Sources */,
+				3CD2A12B27AE083600143DF4 /* HTTPMethod.swift in Sources */,
+				3CD2A12D27AE098600143DF4 /* APIRequestable.swift in Sources */,
+				3C4823FD27AB1D0B0000C1C4 /* PokedexBloc.swift in Sources */,
+				3C4D344327A4A4EC00F0D012 /* ContentView.swift in Sources */,
+				3C4D348227A8785900F0D012 /* ExperimentRouter.swift in Sources */,
+				3C4D344127A4A4EC00F0D012 /* App.swift in Sources */,
+				3C4823FF27AB1D360000C1C4 /* PokedexViewState.swift in Sources */,
+				3C4D348627A8833C00F0D012 /* ExperimentView+OnAppear.swift in Sources */,
+				3C4D347E27A861B100F0D012 /* ExperimentFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4D344927A4A4F000F0D012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4D345227A4A4F000F0D012 /* poc_nickoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4D345327A4A4F000F0D012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4D345E27A4A4F000F0D012 /* poc_nickoUITestsLaunchTests.swift in Sources */,
+				3C4D345C27A4A4F000F0D012 /* poc_nickoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C4D344F27A4A4F000F0D012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C4D343C27A4A4EC00F0D012 /* poc-nicko */;
+			targetProxy = 3C4D344E27A4A4F000F0D012 /* PBXContainerItemProxy */;
+		};
+		3C4D345927A4A4F000F0D012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C4D343C27A4A4EC00F0D012 /* poc-nicko */;
+			targetProxy = 3C4D345827A4A4F000F0D012 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3C4D345F27A4A4F000F0D012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C4D346027A4A4F000F0D012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C4D346227A4A4F000F0D012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"poc-nicko/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devely.poc-nicko";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3C4D346327A4A4F000F0D012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"poc-nicko/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devely.poc-nicko";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3C4D346527A4A4F000F0D012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devely.poc-nickoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poc-nicko.app/poc-nicko";
+			};
+			name = Debug;
+		};
+		3C4D346627A4A4F000F0D012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devely.poc-nickoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poc-nicko.app/poc-nicko";
+			};
+			name = Release;
+		};
+		3C4D346827A4A4F000F0D012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devely.poc-nickoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "poc-nicko";
+			};
+			name = Debug;
+		};
+		3C4D346927A4A4F000F0D012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devely.poc-nickoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "poc-nicko";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C4D343827A4A4EC00F0D012 /* Build configuration list for PBXProject "poc-nicko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4D345F27A4A4F000F0D012 /* Debug */,
+				3C4D346027A4A4F000F0D012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4D346127A4A4F000F0D012 /* Build configuration list for PBXNativeTarget "poc-nicko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4D346227A4A4F000F0D012 /* Debug */,
+				3C4D346327A4A4F000F0D012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4D346427A4A4F000F0D012 /* Build configuration list for PBXNativeTarget "poc-nickoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4D346527A4A4F000F0D012 /* Debug */,
+				3C4D346627A4A4F000F0D012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4D346727A4A4F000F0D012 /* Build configuration list for PBXNativeTarget "poc-nickoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4D346827A4A4F000F0D012 /* Debug */,
+				3C4D346927A4A4F000F0D012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C4D343527A4A4EC00F0D012 /* Project object */;
+}
